@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Check, MessageCircle } from 'lucide-react';
+import bridalImg from "../assets/images/bridal_makeup_accent_1778998015380.png";
 
 export default function BridalHighlight() {
   const benefits = [
@@ -23,7 +24,7 @@ export default function BridalHighlight() {
               className="relative z-10 glass-card p-4"
             >
               <img 
-                src="/src/assets/images/bridal_makeup_accent_1778998015380.png" 
+                src={bridalImg} 
                 alt="Bridal Makeup" 
                 className="rounded-2xl shadow-lg w-full object-cover aspect-[4/5]"
               />

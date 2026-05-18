@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight, MessageCircle } from 'lucide-react';
+import heroBg from "../assets/images/salon_hero_bg_1778997982543.png";
 
 export default function Hero() {
   return (
@@ -7,7 +8,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/src/assets/images/salon_hero_bg_1778997982543.png" 
+          src={heroBg} 
           alt="Salon Interior" 
           className="w-full h-full object-cover opacity-60 scale-100"
         />
