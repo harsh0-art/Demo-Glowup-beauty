@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  /* Frosted Glass Theme Palette */
+  --color-brand-bg: #FDF7F5;
+  --color-brand-text: #4A3B37;
+  --color-brand-heading: #2D2D2D;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #C5A02E;
+  --color-rose-glass: rgba(254, 205, 211, 0.4);
+  --color-amber-glass: rgba(254, 243, 199, 0.4);
+  --color-whatsapp: #25D366;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text font-sans antialiased selection:bg-gold/30;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-brand-heading;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/40 backdrop-blur-md border border-white/40 shadow-sm rounded-2xl;
+  }
+  
+  .glass-card {
+    @apply bg-white/40 backdrop-blur-md border border-white/40 rounded-3xl shadow-sm transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-gold text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-gold/20 hover:bg-gold-hover hover:-translate-y-0.5 active:translate-y-0 transition-all;
+  }
+
+  .btn-whatsapp {
+    @apply bg-whatsapp text-white px-5 py-2.5 rounded-full flex items-center gap-2 hover:brightness-105 shadow-md transition-all font-medium;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}

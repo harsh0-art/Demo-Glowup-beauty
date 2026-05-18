@@ -1,0 +1,8 @@
+{
+  "name": "GlowUp Beauty Studio",
+  "description": "Premium beauty salon and bridal makeup studio in Surat, offering hair, skin, and professional makeup services with WhatsApp booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
